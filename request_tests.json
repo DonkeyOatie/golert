@@ -1,0 +1,42 @@
+[
+    {
+        "url": "https://api.zeus.pm/docs",
+        "status_code": 200,
+        "method": "GET",
+        "basic_auth": true,
+        "parameters": [{}]
+    },
+    {
+        "url": "https://api.zeus.pm/locations",
+        "status_code": 200,
+        "method": "GET",
+        "basic_auth": false,
+        "parameters": [
+            {
+                "key": "auth_method",
+                "value": "user",
+                "env_var": false
+            },
+            {
+                "key": "auth_id",
+                "value": "AUTH_ID",
+                "env_var": true
+            },
+            {
+                "key": "auth_secret",
+                "value": "AUTH_SECRET",
+                "env_var": true
+            },
+            {
+                "key": "locations_scope",
+                "value": "full",
+                "env_var": false
+            },
+            {
+                "key": "locale",
+                "value": "en",
+                "env_var": false
+            }
+        ]
+    }
+]
