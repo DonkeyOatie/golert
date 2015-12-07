@@ -9,14 +9,14 @@ example
 ```json
 [
     {
-        "url": "https://api.zeus.pm/docs",
+        "url": "https://<api_url>/<path>",
         "status_code": 200,
         "method": "GET",
         "basic_auth": true,
         "parameters": [{}]
     },
     {
-        "url": "https://api.zeus.pm/locations",
+        "url": "https://<api_url>/<path>",
         "status_code": 200,
         "method": "GET",
         "basic_auth": false,
@@ -37,8 +37,8 @@ example
                 "env_var": true
             },
             {
-                "key": "locations_scope",
-                "value": "full",
+                "key": "<some_key>",
+                "value": "<some_value>",
                 "env_var": false
             },
             {
